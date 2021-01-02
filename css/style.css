@@ -19,6 +19,10 @@ img {
 	height: auto;
 }
 
+a {
+	text-decoration: none;
+}
+
 .wrapper {
 	overflow: hidden;
 }
@@ -34,4 +38,85 @@ img {
 	max-width: 1230px;
 	padding: 0 15px;
 	margin: 0 auto;
+}
+
+.header {
+	background: #4EA3DB;
+	back
+}
+
+.top {
+	background: #2E6284;
+}
+
+.top ul {
+	text-align: right;
+}
+.top li {
+	display: inline-block;
+	margin: 5px 0 5px 10px;
+}
+
+.top a {
+	color: #4EA3DB;
+}
+
+.top a:hover {
+	text-decoration: underline;
+}
+
+.logo {
+	float: left;
+}
+
+.logo a {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 0;
+}
+
+.logo img {
+	border-radius: 50%;
+	max-width: 100px;
+	margin: 7px 5px;
+}
+
+.search input {
+	float: right;
+	margin: 30px 0;
+}
+
+.search input[type=submit] {
+	background: #2E6284;
+	border-color: #2E6284;
+	border-style: solid;
+	padding: 7px;
+	border-radius: 0 10px 10px 0;
+	border-width: 0;
+	text-align: center;
+	color: #102939;
+}
+
+.search input[type=search] {
+	border-color: #2E6284;
+	padding: 5px;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px 0 0 10px;
+}
+
+.search input[type=submit]:hover {
+	cursor: pointer;
+}
+
+.search input[type=search]:focus {
+	outline: none;
+}
+
+.search input[type=submit]:focus {
+	outline: none;
+}
+
+.search input[type=submit]:active {
+	box-shadow: inset 0 0 5px 5px #204E6C;
 }
