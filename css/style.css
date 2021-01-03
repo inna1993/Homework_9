@@ -148,7 +148,7 @@ a {
 	transition: .1s;
 	display: block;
 	padding: 0 10px;
-	height: 40px;
+	height: 38px;
 }
 
 .navigation li a:hover {
@@ -159,4 +159,40 @@ a {
 .navigation li a:active {
 	background: #1E57AE;
 	color: #4EA3DB;
+}
+
+.sidebar {
+	float: left;
+	background: #B2DDF6;
+	border-right: 2px solid #1E57AE;
+	border-left: 2px solid #1E57AE;
+}
+
+.sidebar h3 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #0C79B7;
+	margin: 10px;
+}
+
+.sidebar ul {
+	text-align: center;
+	color: #0F82C4;
+}
+
+.sidebar li:last-child {
+	border-bottom: 1px dashed #1E57AE; 
+}
+
+.sidebar li:nth-child(5) {
+	border: none;
+}
+
+.sidebar a {
+	color: #0F82C4;
+	display: block;
+}
+
+.sidebar a:hover {
+	text-decoration: underline;
 }
