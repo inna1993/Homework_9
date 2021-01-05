@@ -171,7 +171,7 @@ a {
 .sidebar h3 {
 	text-transform: uppercase;
 	text-align: center;
-	color: #0C79B7;
+	color: #1E57AE;
 	margin: 10px;
 }
 
@@ -196,3 +196,109 @@ a {
 .sidebar a:hover {
 	text-decoration: underline;
 }
+
+.bestseller {
+	display: flex;
+	flex-direction: column;
+}
+
+.bestseller img {
+	max-width: 175px;
+	margin: 7px 5px 0;	
+}
+
+.sidebar h5 {
+	color: #0F82C4;
+	text-align: center;
+}
+
+.main-content {
+	float: right;
+	width: calc(100% - 189px);
+	background-image: linear-gradient(to right, #B2DDF6, #87D2E9, #FFFFFF);
+}
+
+.product_1 {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+.product_1 .hotel_corsica {
+	max-width: 400px;
+	margin: 25px;
+	border: solid 1px #234150;
+}
+
+.product_1 h2 {
+	margin: 25px 0 0 10px;
+	color: #234150;
+}
+
+.product_1 .description {
+	text-align: center;
+	display: block;
+}
+
+.product_1 .price {
+	font: bold 30px/2.5 Arial, Tahoma, Verdana, sans-serif; 
+	color: #295064;
+	margin: 0 0 0 10px;
+}
+
+.description .meal {
+	font: bold 20px/2.5 Arial, Tahoma, Verdana, sans-serif;
+	color: #295064;
+	display: block;
+	text-align: left;
+	margin: 0 0 0 10px;
+}
+
+.meal img {
+	max-width: 40px;
+}
+
+.meal label {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+}
+
+.description .meal input[type=radio] {
+	margin-left: 6px; 
+	height: 30px;
+}
+
+.meal .hb {
+	margin-left: 15px; 
+	display: inline;
+} 
+
+.meal .hb b {
+	color: #000000;
+	margin: 5px;
+	display: inline-block;
+	font-size: 20px;
+	vertical-align: super;
+}
+
+.description .meal input[type=submit] {
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: solid 2px #307292;
+	background: #307292;
+	padding: 7px;
+	border-radius: 20px;	
+}
+
+.description .meal input[type=submit]:focus {
+	outline: none;
+}
+
+.description .meal input[type=submit]:hover {
+	height: 50px;
+	wight: 120px;
+	font-size: 25px;
+}
+
