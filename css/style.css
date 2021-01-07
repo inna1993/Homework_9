@@ -166,6 +166,7 @@ a {
 	background: #B2DDF6;
 	border-right: 2px solid #1E57AE;
 	border-left: 2px solid #1E57AE;
+	padding-bottom: 10px;
 }
 
 .sidebar h3 {
@@ -216,7 +217,8 @@ a {
 	float: right;
 	width: calc(100% - 189px);
 	background-image: linear-gradient(to right, #B2DDF6, #87D2E9, #FFFFFF);
-	min-height: 859.45px;
+	min-height: 869.45px;
+	padding-bottom: 10px;
 }
 
 .product_1 {
@@ -366,7 +368,7 @@ a {
 
 .spa img {
 	border: solid 1px #625608; 
-	opacity: 0.7;
+	opacity: 0.6;
 }
 
 .spa span {
@@ -385,7 +387,7 @@ a {
 
 .restaurant img {
 	border: solid 1px #625608; 
-	opacity: 0.7;
+	opacity: 0.6;
 }
 
 .restaurant span {
@@ -425,6 +427,110 @@ a {
 	opacity: 1;
 	transition: .5s;
 }
+
+.footer {
+	background: #4EA3DB;
+	border-top: 2px solid #1E57AE;
+}
+
+.foot-100 {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	line-height: 1.6;
+	color: #1E57AE;
+	padding: 10px 3px;
+}
+
+.foot-100 h4 {
+	text-transform: uppercase;
+}
+
+.foot-100 a {
+	color: #1E57AE;
+}
+
+.foot-100 a:hover {
+	text-decoration: underline;
+}
+
+.links {
+	flex-basis: 25%;
+}
+
+.contacts {
+	flex-basis: 25%;
+}
+
+.foot-50 {
+	flex-basis: 50%;
+	text-align: right;
+}
+
+
+
+.socials ul {
+	margin-top: 10px;
+}
+.socials li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.socials li:first-child {
+	margin-left: 0;
+}
+
+.socials a {
+	border-radius: 20%;
+	height: 45px;
+	width: 45px;
+	display: block;
+	text-align: center;
+	padding: 6px 1px;
+}
+
+.socials img {
+	max-width: 32px;
+}
+
+.socials a.facebook {
+	background: #0C2897;
+} 
+
+.socials a.insta {
+	background: #AF1C92;
+} 
+
+.socials a.twitter {
+	background: #1176B0;
+} 
+
+.socials a.youtube {
+	background: #C01A3B;
+} 
+
+.socials a.whatsapp {
+	background: #1AC025;
+} 
+
+.socials a:hover {
+	filter: contrast(500%);
+}
+
+.bottom {
+	background: #2E6284;
+	max-height: 20.7px;
+}
+
+.bottom span {
+	color: #4EA3DB;
+	font: 200 12px/1.5 Arial, Tahoma, Verdana, sans-serif;
+	margin-left: 5px;
+}
+
+
+
 
 
 
