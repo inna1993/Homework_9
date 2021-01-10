@@ -149,6 +149,8 @@ a {
 	display: block;
 	padding: 0 10px;
 	height: 38px;
+	border-left: 2px solid transparent; 
+	border-right: 2px solid transparent; 
 }
 
 .navigation li a:hover {
