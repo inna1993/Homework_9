@@ -80,9 +80,11 @@ a {
 	margin: 7px 5px;
 }
 
-.search input {
+.search {
 	float: right;
 	margin: 30px 0;
+	display: inline-block;
+	font-size: 0;
 }
 
 .search input[type=submit] {
@@ -124,7 +126,7 @@ a {
 	background: #4EA3DB;
 	border-bottom: 2px solid #1E57AE; 
 	border-top:  2px solid #1E57AE; 
-	height: 40px;
+	min-height: 40px;
 }
 
 .navigation ul {
@@ -236,6 +238,7 @@ a {
 
 .product_1 .hotel_corsica img {
 	max-width: 400px;
+	height: auto;
 	margin: 25px 25px 0 25px;
 	border: solid 1px #234150;
 
@@ -456,12 +459,11 @@ a {
 	text-decoration: underline;
 }
 
-.links {
-	flex-basis: 25%;
-}
-
-.contacts {
-	flex-basis: 25%;
+.foot-25_25 {
+	display: flex;
+	flex-flow: row nowrap;
+	flex-basis: 50%;
+	justify-content: space-between;
 }
 
 .foot-50 {
@@ -469,7 +471,9 @@ a {
 	text-align: right;
 }
 
-
+.foot-50 h4 {
+	padding-right: 10px;
+}
 
 .socials ul {
 	margin-top: 10px;
@@ -531,8 +535,143 @@ a {
 	margin-left: 5px;
 }
 
+.mobile-btn {
+	width: 32px;
+	height: 23px;
+	border-top: 3px solid #1E57AE;
+	border-bottom: 3px solid #1E57AE;
+	align-items: center;
+	display: none;
+}
+
+.mobile-btn span {
+	width: 100%;
+	height: 3px;
+	background: #1E57AE;
+}
+
+@media only screen and (max-width : 1080px) {
+	.navigation li {
+		font-size: 11px;
+	}
+}
+	
+@media only screen and (max-width : 820px) {
+	.navigation li {
+		line-height: 15px;
+		padding-top: 7px;
+	}
+	
+	.naviagation li a {
+		padding: 0;
+	}
+	
+	.services span {
+		display: none;
+	}
+}	
+
+@media only screen and (max-width : 750px)	{
+	
+	.foot-100 {
+		display: block;
+	}
+	
+	.links {
+		max-width: 50%;
+		font: 400 16px/1.25 Arial, Tahoma, Verdana, sans-serif;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	.contacts {
+		max-width: 50%;
+		font: 400 16px/1.25 Arial, Tahoma, Verdana, sans-serif;
+		display: inline-block;
+		text-align: right;
+		vertical-align: top;
+	}
+	
+	.socials {
+		text-align: center;
+		margin-top: 10px;
+	}
+	
+	.socials ul {
+		margin-top: 5px;
+	}
+	
+	.socials li {
+		margin: 0 4px;
+	}
+	
+	.bottom span {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (max-width : 680px) {
+	
+	.navigation {
+		padding: 5px 0 0;
+		text-align: center;
+		position: relative;
+	}
+	
+	.navigation ul {
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		display: none;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 100%;
+		background: #4EA3DB;
+		border-bottom: 2px solid #1E57AE;
+		z-index: 1000;
+	}
+	
+	.navigation li {
+		border-bottom: 1px solid #1E57AE;
+		width: 100%;
+		font: 400 14px/3 Arial, Tahoma, Verdana, sans-serif;
+		text-align: center;
+		padding-top: 0;
+		margin: 0;
+	}
+	
+	.navigation li:last-child {
+		border-bottom: none;
+	}
+	
+	.navigation .mobile-btn:hover + ul	{
+		display: block;
+	}
+	
+	.mobile-btn {
+		display: inline-flex;
+	}
+}	
 
 
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	
+	.logo,
+	.search {
+		float: none;
+		display: block;
+	}
 
-
-
+	.header .clearfix {
+		text-align: center;
+	}
+	.search {
+		margin: 5px 0 10px;
+	}
+	.logo img {
+		max-width: 80px;
+		margin-bottom: 0;
+	}
+	
+}
